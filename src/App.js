@@ -13,8 +13,6 @@ const App = () => {
       <Typography variant='h2'>
         List Todo
       </Typography>
-      <Typography variant='subtitle1'>Made using Material UI & ReactJS</Typography>
-      <Typography variant='subtitle3'>by Nico</Typography>
       <ToDoForm 
         saveTodo={(todoText) => {
           const trimmedText = todoText.trim();
@@ -22,11 +20,14 @@ const App = () => {
             setTodos([...todos, trimmedText])
           }
         }} />
+        <Typography variant='subtitle1'>Made using Material UI & ReactJS</Typography>
+        <Typography variant='subtitle3'>by Nico</Typography>
       <ToDoList todos={todos} 
         deleteTodo={(todoIndex) => {
           const newTodos = todos.filter((_,index) => index !== todoIndex);
           setTodos(newTodos)
         }}/>
+        
     </div>
   )
 }
