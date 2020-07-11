@@ -11,7 +11,7 @@ const ToDoForm = ({saveTodo}) => {
             saveTodo(value);
             setValue('');
             }} >
-                <TextField variant='outlined' placeholder='Add Todo' margin='normal' value={value} 
+                <TextField variant='outlined' placeholder='Cleaning House' margin='normal' value={value} 
                 onChange={(e) => {
                     setValue(e.target.value)
                 }} />

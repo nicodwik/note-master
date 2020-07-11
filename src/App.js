@@ -10,9 +10,11 @@ const App = () => {
   const [todos, setTodos] = useState([])
   return(
     <div className='App'>
-      <Typography component='h1' variant='h2'>
-        Todos
+      <Typography variant='h2'>
+        List Todo
       </Typography>
+      <Typography variant='subtitle1'>Made using Material UI & ReactJS</Typography>
+      <Typography variant='subtitle3'>by Nico</Typography>
       <ToDoForm 
         saveTodo={(todoText) => {
           const trimmedText = todoText.trim();
