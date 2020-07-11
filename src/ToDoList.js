@@ -1,7 +1,7 @@
 import React from 'react'
 import DeleteIcon from '@material-ui/icons/Delete'
 
-const { List, ListItem, Checkbox, ListItemText, ListItemSecondaryAction, IconButton } = require("@material-ui/core")
+const { List, ListItem, ListItemText, ListItemSecondaryAction, IconButton } = require("@material-ui/core")
 
 
 const ToDoList = ({todos, deleteTodo}) => {
