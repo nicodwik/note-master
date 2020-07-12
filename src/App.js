@@ -1,34 +1,60 @@
 import React from 'react';
 
 import './App.css';
-import { Typography } from '@material-ui/core';
+import { Typography, Container, CssBaseline,} from '@material-ui/core';
 import ToDoForm from './ToDoForm';
 import { useState } from 'react';
 import ToDoList from './ToDoList';
+import DraggableDialog from './DragabbleDialog';
+
+
+var styles = {
+  right: '0',
+  left: '0',
+  backgroundColor: "#ffffff",
+  textAlign: "center",
+  padding: "20px",
+  position: "fixed",
+  justifyContent: 'center',
+  bottom: "0",
+}
 
 const App = () => {
   const [todos, setTodos] = useState([])
   return(
-    <div className='App'>
-      <Typography variant='h2'>
-        List Todo
-      </Typography>
-      <ToDoForm 
-        saveTodo={(todoText) => {
-          const trimmedText = todoText.trim();
-          if (trimmedText.length > 0) {
-            setTodos([...todos, trimmedText])
-          }
-        }} />
-        <Typography variant='subtitle1'>Made using Material UI & ReactJS</Typography>
-        <Typography variant='subtitle3'>by Nico</Typography>
-      <ToDoList todos={todos} 
-        deleteTodo={(todoIndex) => {
-          const newTodos = todos.filter((_,index) => index !== todoIndex);
-          setTodos(newTodos)
-        }}/>
-        
-    </div>
+    <>
+      <CssBaseline>
+      <Container maxWidth='sm'>
+        <div className='App'>
+          <Typography variant='h2'>
+            Simple List Todo
+          </Typography>
+          <Typography variant='body1'>v1.1</Typography>
+          <DraggableDialog/>
+            <br/>
+          <Typography variant='subtitle1'>Made using Material UI & ReactJS</Typography>
+            
+          <Typography variant='subtitle2'>by Nico</Typography>
+          
+          
+          <ToDoList todos={todos} 
+            deleteTodo={(todoIndex) => {
+              const newTodos = todos.filter((_,index) => index !== todoIndex);
+              setTodos(newTodos)
+            }}/>
+            <div style={styles}>
+              <ToDoForm 
+                saveTodo={(todoText) => {
+                  const trimmedText = todoText.trim();
+                  if (trimmedText.length > 0) {
+                    setTodos([...todos, trimmedText])
+                  }
+                }} />
+            </div>
+        </div>
+      </Container>
+    </CssBaseline>
+    </>
   )
 }
 
