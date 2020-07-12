@@ -28,7 +28,7 @@ export default function DraggableDialog() {
 
   return (
     <div>
-      <Button variant="contained" color="primary" size='small' onClick={handleClickOpen}>
+      <Button variant="contained" color="sacondary" size='small' onClick={handleClickOpen}>
         Update Log
       </Button>
       <Dialog
@@ -40,7 +40,7 @@ export default function DraggableDialog() {
         
         <DialogContent>
           <DialogContentText style={{color: '#000000'}}>
-            V1.1
+            <b>V1.1</b>
             <br/>
             1. Added checkbox to mark your finished task
             <br/>
@@ -51,9 +51,10 @@ export default function DraggableDialog() {
             4. Added success and delete notification
             <br/>
             <br/>
-            Next update: Dark mode (?)
             <br/>
-            call me if you find bug or need improvement, find me at IG: nicodwi_k
+            <b>Next update: Dark mode (?)</b>
+            <br/>
+            Call me if you find bug or need improvement, find me at IG: <b>nicodwi_k</b>
           </DialogContentText>
         </DialogContent>
         <DialogActions>
