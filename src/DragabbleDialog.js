@@ -54,7 +54,7 @@ export default function DraggableDialog() {
             <br/>
             <b>Next update: Dark mode (?)</b>
             <br/>
-            Call me if you find bug or need improvement, find me at IG: <b>nicodwi_k</b>
+            If you find bug or need improvement, catch me at IG: <b>nicodwi_k</b>
           </DialogContentText>
         </DialogContent>
         <DialogActions>

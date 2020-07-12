@@ -63,7 +63,7 @@ const ToDoList = ({todos, deleteTodo}) => {
             autoHideDuration={1000}
             onClose={handleClose}
             > 
-                <Alert onClose={handleClose} severity='error'>
+                <Alert severity='error'>
                     task Deleted!
                 </Alert>        
             </Snackbar>

@@ -57,7 +57,7 @@ const ToDoForm = ({saveTodo}) => {
             autoHideDuration={1000}
             onClose={handleClose}
             > 
-                <Alert onClose={handleClose} severity='success'>
+                <Alert severity='success'>
                     task Created!
                 </Alert>        
         </Snackbar>
