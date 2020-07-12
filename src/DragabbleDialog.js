@@ -28,7 +28,7 @@ export default function DraggableDialog() {
 
   return (
     <div>
-      <Button variant="contained" color="sacondary" size='small' onClick={handleClickOpen}>
+      <Button variant="contained" color="secondary" size='small' onClick={handleClickOpen}>
         Update Log
       </Button>
       <Dialog

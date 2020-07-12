@@ -37,7 +37,7 @@ const ToDoList = ({todos, deleteTodo}) => {
         const completed = document.getElementById('completed');
         
         setChecked(e.target.checked);
-        {checked == true ? completed.style.textDecoration='none' : completed.style.textDecoration='line-through' }
+        {checked === true ? completed.style.textDecoration='none' : completed.style.textDecoration='line-through' }
     }
     return(
         <div className={classes.root}>
