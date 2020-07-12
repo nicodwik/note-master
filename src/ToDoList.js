@@ -3,7 +3,7 @@ import DeleteIcon from '@material-ui/icons/Delete'
 import { useState } from 'react'
 import MuiAlert from "@material-ui/lab/Alert";
 
-const { List, ListItem, ListItemText, ListItemSecondaryAction, Checkbox, IconButton, makeStyles, Snackbar } = require("@material-ui/core")
+const { List, ListItem, ListItemText, ListItemSecondaryAction, IconButton, makeStyles, Snackbar } = require("@material-ui/core")
 
 const Alert = (props) => {
     return <MuiAlert elevation={6} variant='filled' {...props} />
@@ -31,7 +31,7 @@ const ToDoList = ({todos, deleteTodo}) => {
     }
 
 
-    const [checked, setChecked] = useState(false);
+    // const [checked, setChecked] = useState(false);
 
     return(
         <div className={classes.root}>
