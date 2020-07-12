@@ -28,7 +28,7 @@ const ToDoForm = ({saveTodo}) => {
     const classes = useStyles();
     const [open, setOpen] = useState(false);
     const handleOpen = () => {
-        {value === '' ? setOpen(false) : setOpen(true)}
+        value === '' ? setOpen(false) : setOpen(true)
     }
     const handleClose = (e, reason) => {
         if(reason === 'clickaway') {
