@@ -27,7 +27,7 @@ const App = () => {
       <Container maxWidth='sm'>
         <div className='App'>
           <Typography variant='h2'>
-            Simple List Todo
+            Note Master
           </Typography>
           <Typography variant='body1'>v1.1</Typography>
           <DraggableDialog/>
