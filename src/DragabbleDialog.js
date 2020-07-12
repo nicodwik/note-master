@@ -42,13 +42,11 @@ export default function DraggableDialog() {
           <DialogContentText style={{color: '#000000'}}>
             <b>V1.1</b>
             <br/>
-            1. Added checkbox to mark your finished task
+            1. Moved Form to bottom for better experience on mobile phone
             <br/>
-            2. Moved Form to bottom for better experience on mobile phone
+            2. Added plus button to insert your task to list
             <br/>
-            3. Added plus button to insert your task to list
-            <br/>
-            4. Added success and delete notification
+            3. Added success and delete notification
             <br/>
             <br/>
             <br/>

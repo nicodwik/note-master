@@ -37,7 +37,10 @@ const App = () => {
           <Typography variant='subtitle2'>by Nico</Typography>
           
           
-          <ToDoList todos={todos} 
+          <ToDoList todos={todos} checkTodo={(todoIndex) => {
+              const newTodos = todos.filter((_,index) => index !== todoIndex);
+              setTodos(newTodos)
+            }}  
             deleteTodo={(todoIndex) => {
               const newTodos = todos.filter((_,index) => index !== todoIndex);
               setTodos(newTodos)

@@ -33,18 +33,16 @@ const ToDoList = ({todos, deleteTodo}) => {
 
     const [checked, setChecked] = useState(false);
 
-    const handleChange = (e) => {
-        const completed = document.getElementById('completed');
-        
-        setChecked(e.target.checked);
-        checked === true ? completed.style.textDecoration='none' : completed.style.textDecoration='line-through'
-    }
     return(
         <div className={classes.root}>
             <List>
             {todos.map((todo, index) => (
                 <ListItem key={index.toString()}  divider button>
-                    <Checkbox checked={checked} color='primary' onChange={handleChange} inputProps={{'aria-label': 'primary checkbox'}} />
+                    {/* <Checkbox key={index.toString()} checked={checked} color='primary' onChange={(e) => {
+        const completed = document.getElementById('completed');
+        setChecked(e.target.checked);
+        checked === true ? completed.style.textDecoration='none' : completed.style.textDecoration='line-through'
+    }} inputProps={{'aria-label': 'primary checkbox'}} /> */}
                     <ListItemText primary={todo} id='completed' />
 
                     <ListItemSecondaryAction>
